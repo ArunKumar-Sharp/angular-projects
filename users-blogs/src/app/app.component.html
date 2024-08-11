@@ -1,1 +1,18 @@
-<app-header> </app-header>
+<app-header></app-header>
+<div class="container">
+    <app-left-side-nav [users]="users" (selectedUser)="selectedUser($event)"></app-left-side-nav>
+    <main class="main-content">
+        <div class="blog-container" *ngFor="let blog of blogs; let i = index">
+            <header class="blog-header">
+                <h3>Blog {{i + 1}}</h3>
+            </header>
+            <section class="blog-content">
+                <article>
+                    <p>{{blog}}</p>
+                </article>
+            </section>
+        </div>
+
+    </main>
+</div>
+

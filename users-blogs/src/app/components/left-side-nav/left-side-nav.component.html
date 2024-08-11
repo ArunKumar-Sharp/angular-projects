@@ -1,0 +1,10 @@
+<nav class="side-nav">
+    <ul>
+        <li *ngFor="let user of users">
+            <button class="user-button" (click)="selectedUserEvent(user.id)">
+                <img [src]="user.profilepic" alt="User Image" class="user-image">
+                <span class="user-name">{{user.name}}</span>
+            </button>
+        </li>       
+    </ul>
+</nav>

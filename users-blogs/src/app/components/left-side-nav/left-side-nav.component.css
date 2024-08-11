@@ -1,0 +1,57 @@
+.side-nav {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 85vh;
+    overflow-x: scroll;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin-bottom: 10px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-button {
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    background-color: #007BFF;
+    /* Button background color */
+    border: none;
+    border-radius: 10px;
+    /* Rounded corners */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 95%;
+}
+
+.user-button:hover {
+    background-color: #0056b3;
+    /* Button color on hover */
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Circular image */
+    object-fit: cover;
+    /* Ensure image covers the circle */
+    margin-right: 10px;
+    /* Space between image and name */
+}
+
+.user-name {
+    font-weight: bold;
+}
